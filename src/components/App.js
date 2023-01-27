@@ -6,7 +6,7 @@ import ContactList from './ContactListFolder/ContactList';
 import { nanoid } from 'nanoid';
 import { Wrap } from 'Global.Styles';
 
-export default function App() {
+export function App() {
   const [filter, setFilter] = useState('');
   const [contacts, setContacts] = useState(
     JSON.parse(window.localStorage.getItem('contacts')) ?? ''
